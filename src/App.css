@@ -1,38 +1,70 @@
-.App {
+*{
+  margin: 0;
+  box-sizing: border-box;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #b46e54;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.content{
+  display: flex;
+  width: 35vw;
+  min-width: 45vw;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #4a7979;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#mathContent{
+  margin-top: 10px;
+}
+.modal{
+  position: fixed;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(75, 89, 89, 0.4);
+  z-index: 10;
+}
+.modalContent{
+  position: relative;
+  margin: 0 auto;
+  min-width: 200px;
+  min-height: 150px;
+  max-width: 350px;
+  max-height: 250px;
+  background-color: #79c7c7;
+  z-index: 10;
+}
+.closeButton{
+  position: absolute;
+  right: 0;
+  top: -5px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: alias;
+  user-select: none;
+}
+.symbol{
+  font-size:5rem;
+  margin-top: -10px;
+}
+.expression{
+  min-width: 20vw;
+}
+.variable{
+  min-width: 4vw;
+}
+.button{
+  min-width: 4vw;
+  min-height: 4vh;
 }
